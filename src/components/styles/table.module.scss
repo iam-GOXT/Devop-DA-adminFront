@@ -1,0 +1,81 @@
+.table {
+  width: 100%;
+  margin-left: 40px;
+
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  overflow-x: scroll;
+  @media screen and (max-width: 768px) {
+    margin-left: 10px;
+    font-size: 13px;
+
+    line-height: 30px;
+  }
+}
+.delete {
+  color: red;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.edit {
+  color: goldenrod;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.tableContainer {
+  border: 1px solid lightgray;
+  border-left: 3px solid rgb(241, 236, 236);
+  border-top: 0px;
+  padding: 20px;
+  overflow-x: scroll;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px lightgrey;
+  color: #238188;
+  min-height: 400px;
+  @media screen and (max-width: 768px) {
+    margin-left: -25px;
+    margin-right: -15px;
+  }
+}
+
+.tableTitle {
+  font-size: 30px;
+  font-weight: bolder;
+  padding-left: 70px;
+  @media screen and (max-width: 768px) {
+    padding-left: 0px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+.tableHead {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.td {
+  max-width: 120px;
+  margin-bottom: 70px !important;
+  line-height: 30px;
+  @media screen and (max-width: 768px) {
+    max-width: 50px;
+    overflow: hidden;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 12px;
+  }
+}
+.th {
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    margin-right: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.viewAll {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}

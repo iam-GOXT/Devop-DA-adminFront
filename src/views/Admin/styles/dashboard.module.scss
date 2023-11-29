@@ -1,0 +1,96 @@
+.pageContainer{
+    padding-top: 40px;
+    padding-left:70px;
+    padding-right: 50px;
+
+    @media screen and (max-width:768px) {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+}
+.hello{
+    font-size: 30px;
+    font-weight: 700;
+    color:#0D5459;
+    @media screen and (max-width:768px) {
+        font-size: 24px;
+    }
+}
+.welcome{
+    font-size: 17px;
+    font-weight: 400;
+    color: #0D5459;
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+    }
+}
+.smallNavs{
+    font-size: 12px;
+    color: #2B949C;
+    font-weight: 500;
+}
+.links{
+    text-decoration: none;
+    color: unset;
+}
+.btnCreate{
+    border: none;
+    background-color: #128890;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    max-height: 40px;
+}
+.searchBox{
+    width: 600px;
+}
+.searchInput{
+    width: 100%;
+    border: none;
+}
+.searchInput:focus{
+    border: none !important;
+}
+.searchBox{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.numberBox{
+    box-shadow: 2px 2px whitesmoke;
+    min-width: 150px;
+    min-height: 80px;
+    
+    padding: 20px;
+    color: #16A2AC;
+    @media screen and (max-width:'768px') {
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+.number{
+    font-size: 58px;
+    font-weight: bolder;
+    @media screen and (max-width:'768px') {
+        font-size: 40px;
+        display: block;
+        justify-content: start !important;
+    }
+}
+.numberLabel{
+    font-size: 17px;
+    padding-top: 15px;
+}
+.searchLayer{
+    display: flex;
+    flex-wrap: nowrap;
+}

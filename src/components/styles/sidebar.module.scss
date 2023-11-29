@@ -1,0 +1,45 @@
+.sideBar {
+  background-color: #fafafa;
+  color: rgba(42, 55, 138, 0.75);
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 40px !important;
+  padding-right: 20px;
+}
+.mobileSideBar {
+  background-color: #fafafa;
+  width: 60vw;
+  color: rgba(42, 55, 138, 0.75);
+}
+
+.logoArea {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  color: rgba(42, 55, 138, 0.75);
+}
+.logoText {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: rgba(42, 55, 138, 0.75);
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
+}
+.listsBox {
+  font-weight: 600;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.navBarOptions {
+  padding-top: 40px;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    padding-left: 27px;
+  }
+}
+.footer {
+  position: fixed;
+  bottom: 1.5rem;
+  color: rgba(42, 55, 138, 0.75);
+}

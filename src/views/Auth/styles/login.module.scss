@@ -1,0 +1,37 @@
+
+.formBox{
+    padding-left: 30px;
+    width: 100%;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    @media screen and (max-width:768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }
+}
+.btn{
+    width: 100%;
+}
+.input{
+    height: 50px;
+    font-weight: 500 !important;
+}
+
+.header{
+    font-weight: bolder;
+    font-size: 45px;
+    color: rgba(68, 68, 68, 0.77);
+    @media screen and (max-width:768px) {
+        color: initial;
+       font-size: 38px;
+       text-align: center;
+    }
+}
+.inputWrapper{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    align-items: center;
+    padding-right: 20px;
+}

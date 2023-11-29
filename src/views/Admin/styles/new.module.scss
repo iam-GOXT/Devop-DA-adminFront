@@ -1,0 +1,72 @@
+.formContainer{
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #238188;
+    padding-right: 20px;
+    @media screen and (max-width:768px) {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}
+.activities{
+    min-height: 150px;
+    box-shadow: 3px 3px lightgray;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+.Layout{
+    padding-right: 40px;
+
+}
+
+.label{
+    font-size: 15px;
+    font-weight: bold;
+}
+.errorMessage{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+.placeholder{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    @media screen and (max-width:768px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+.inputFile{
+    border: none;
+    font-size: 13px;
+    font-weight: 900;
+  
+}
+.selectLabel{
+    font-size: 14px;
+    font-weight: bolder;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    @media screen and (max-width:768px) {
+        width: 70px;
+        height: 70px;
+    }
+}
+.imageSelction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+}

@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 40px;
+    color: #238188;
+    border-bottom: 1px solid #2B949C;
+    padding-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.text{
+    padding-left: 50px;
+}
+.title{
+   
+    font-weight: bolder;
+    font-size: 30px;
+}
+.subTitle{
+    font-size: 18px;
+    font-weight: 500;
+}
