@@ -38,18 +38,22 @@ const Dashboard = () => {
     fetcher
   );
 
-  // useEffect(() => {
-  //   console.log("data:", data);
-  // }, [data]);
-
   // Manage Paginated Page Index
   useEffect(() => {
-    setPageNumber(JSON.parse(localStorage.getItem(location.pathname)) || 0);
-  }, [location.pathname]);
+    setPageNumber(0);
+  }, [searchKeyWord]); // Reset page number when search keyword changes
+
+  useEffect(() => {
+    if (data) {
+      // Ensure that pageCount is a non-negative integer
+      const pageCount = Math.max(Math.ceil(data.total / pageSize), 0);
+      setPageNumber(Math.min(pageNumber, pageCount - 1));
+    }
+  }, [data, pageSize]);
 
   const trashRecord = async (id) => {
     const query = window.confirm(
-      "Are you sure you want to move record to trash?"
+      "Are you sure you want to move the record to trash?"
     );
     if (!query) return;
 
@@ -81,10 +85,9 @@ const Dashboard = () => {
     }
   };
 
-  const handleSearch = async (e) => {
+  const handleSearch = (e) => {
     const query = e.target.value;
     setSearchKeyWord(query);
-    setPageNumber(0);
   };
 
   return (
@@ -102,7 +105,6 @@ const Dashboard = () => {
             <div className={`numberBox d-flex justify-content-end flex-1`}>
               <div className={`${styles.numberBox}`}>
                 <div className="d-flex">
-                  {/* <div className={styles.number}>{response?.data?.schools?.length}</div> */}
                   <div className={styles.number}>{data?.total}</div>
                   <div className={`${styles.numberLabel} ml-2`}>
                     <div>Records</div>
@@ -114,11 +116,12 @@ const Dashboard = () => {
           </div>
 
           <div className={` ${styles.searchLayer}`}>
-            <div className={styles.searchBox} onChange={(e) => handleSearch(e)}>
+            <div className={styles.searchBox}>
               <Form.Control
                 placeholder="Search"
                 className={`${styles.searchInput} shadow-none`}
                 type="search"
+                onChange={handleSearch}
               />
               <BiSearchAlt2 color="lightgray" size={23} />
             </div>
